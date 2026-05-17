@@ -36,3 +36,8 @@ base-domains used Lumbok.
 Each of the microservices will attempt to use port 8080, and this is not desirable
 since they should all run on their own ports. Hence, we need to modify the application.properties
 file and specify the port. One can simply write: `server.port=8081`.
+
+### Order service
+
+This microservice will generate an Order then publish that OrderEvent object
+to Kafka.
