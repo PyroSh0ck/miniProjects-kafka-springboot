@@ -11,8 +11,9 @@
 
 ## Initializing the Kafka Server
 
-1. Make sure you've generated a KAFKA_CLUSTER_ID. There should already
-be one generated, however if necessary run
+1. First download and extract Kafka from the website.
+Then make sure you've generated a KAFKA_CLUSTER_ID. In order to generate
+a KAFKA_CLUSTER_ID, please run
 `KAFKA_CLUSTER_ID = "$(bin/kafka-storage.sh random-uuid)"`. Then,
 you should format the log directories via
 `bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties`.
