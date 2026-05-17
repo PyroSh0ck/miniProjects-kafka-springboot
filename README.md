@@ -13,9 +13,13 @@
 
 1. First download and extract Kafka from the website.
 Then make sure you've generated a KAFKA_CLUSTER_ID. In order to generate
-a KAFKA_CLUSTER_ID, please run
+a KAFKA_CLUSTER_ID, please run (note that all of these commands should be
+run in the Kafka folder)
 `KAFKA_CLUSTER_ID = "$(bin/kafka-storage.sh random-uuid)"`. Then,
 you should format the log directories via
 `bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties`.
 Lastly, you should start the Kafka server on a separate bash process via
 `bin/kafka-server-start.sh config/server.properties`
+
+Afterward, you must leave this terminal open. In another terminal,
+run `bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092`
