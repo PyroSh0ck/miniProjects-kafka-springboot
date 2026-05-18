@@ -40,7 +40,7 @@ public class OrderProducer {
   // Send message method (self explanatory, just sends a message to the kafka
   // topic)
   public void sendMessage(OrderEvent event) {
-    LOGGER.info(String.format("Order event => %s", event.toString()));
+    LOGGER.info(String.format("Order event: %s", event.toString()));
 
     // create message:
     Message<OrderEvent> message = MessageBuilder
