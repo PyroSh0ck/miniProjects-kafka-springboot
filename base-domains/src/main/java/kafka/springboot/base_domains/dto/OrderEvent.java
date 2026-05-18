@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
  * self-explanatory.
  *
  */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

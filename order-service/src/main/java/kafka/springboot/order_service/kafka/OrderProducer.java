@@ -22,7 +22,7 @@ import kafka.springboot.base_domains.dto.OrderEvent;
 @Service
 // Remember, the service annotation makes order producer a spring bean class
 // (whatever that means)
-class OrderProducer {
+public class OrderProducer {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(OrderProducer.class);
 

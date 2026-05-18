@@ -1,3 +1,0 @@
-rootProject.name = 'order-service'
-// Needed so that we can import stuff from the base-domains package (since there isn't a rootProject)
-includeBuild('../base-domains')
